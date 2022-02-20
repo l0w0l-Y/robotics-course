@@ -8,12 +8,16 @@ import os
 
 # Entering the size of the cropped images.
 stepXY = int(input("Enter the size of the cropped image: "))
+
 # Path to save cropped images.
 save_path = "cropped_images"
+
 # Image reading.
 img = cv2.imread("photo_test.jpg")
+
 # Image width.
 imgXMax = img.shape[0]
+
 # Image height.
 imgYMax = img.shape[1]
 
@@ -22,9 +26,9 @@ imgYMax = img.shape[1]
 def readAndShowCroppedImage(i, j, step):
     # Cropping the image from i pixel to i + step pixel x-axis and j to j+step y-axis.
     imgCropped = img[i:i + step, j: j + step]
-    # Showing cropped image.
+    # Showing the cropped image.
     cv2.imshow(f"cropped_image_{str(i)}_{str(j)}", imgCropped)
-    # Saving cropped image in current directory.
+    # Saving the cropped image in current directory.
     cv2.imwrite(f"{save_path}/{stepXY}/cropped_image_{str(i)}_{str(j)}.jpg", imgCropped)
 
 
@@ -54,5 +58,5 @@ else:
                 break
             else:
                 readAndShowCroppedImage(x, y, stepXY)
-# Doesn't close the application when the code ends.
+# Doesn't close the window when the code ends.
 cv2.waitKey(0)
