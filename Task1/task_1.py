@@ -9,9 +9,9 @@ import os
 # Entering the size of the cropped images.
 stepXY = int(input("Enter the size of the cropped image: "))
 # Path to save cropped images.
-save_path = "Task1/cropped_images"
+save_path = "cropped_images"
 # Image reading.
-img = cv2.imread("Task1/photo_test.jpg")
+img = cv2.imread("photo_test.jpg")
 # Image width.
 imgXMax = img.shape[0]
 # Image height.
