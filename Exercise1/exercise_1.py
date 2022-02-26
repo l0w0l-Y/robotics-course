@@ -2,7 +2,7 @@ import cv2
 import os
 
 # =============================================================================
-# Task1: Split an image into several other images of a certain length and width.
+# Exercise 1: Split an image into several other images of a certain length and width.
 # Save all received images to the original folder.
 # =============================================================================
 

@@ -4,7 +4,7 @@ import cv2
 from numpy import float32
 
 # =============================================================================
-# Task 2: One practical application of warping in OpenCV
+# Exercise 2: One practical application of warping in OpenCV
 # can be to warp an image into a smaller one with a mouse clicking.
 # Need to implement image deformation on mouse click.
 # =============================================================================

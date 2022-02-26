@@ -1,7 +1,7 @@
 import cv2
 
 # =============================================================================
-# Task3: Record a video from a webcam to a mp4-file with OpenCV.
+# Exercise 3: Record a video from a webcam to a mp4-file with OpenCV.
 # =============================================================================
 
 # Takes a video stream from a webcam.
